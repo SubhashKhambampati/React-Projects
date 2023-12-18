@@ -48,12 +48,7 @@ function Header() {
                 <span>series</span>
 
             </a>
-            <a>
-
-                <img src="/images/series-icon.svg"/>
-                <span>seriesdffffffffffffffffff</span>
-
-            </a>
+            
 
         </NavMenu>
         <UserImg src="https://i.pinimg.com/736x/92/26/d7/9226d738bb7e00aa1bff0b73b786ae00.jpg"/>
@@ -97,6 +92,7 @@ a{
     display:flex;
     align-items:center;
     padding:0 12px;
+
     img{
             
             height:20px;
@@ -120,22 +116,32 @@ a{
             right:0;
             bottom:-6px;
             opacity:0; 
+            transform-origin:left center;
             transform:scaleX(0);
             transition:transform 300ms cubic-bezier(0.25,0.46,0.45,0.94) 0s, opacity 250ms cubic-bezier(0.25,0.46,0.45,0.94) 0s;
 
         }
+        
 
     }
-
     &:hover{
 
         span:after{
 
-            transform: scaleX(1);
-            opacity:1;
+       
+
+        transform: scaleX(1);
+        opacity:1;
+
         }
 
-    }
+        
+        
+        
+
+}
+
+    
     
 }
 
