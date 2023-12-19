@@ -4,23 +4,14 @@ import styled from 'styled-components';
 
 function ImgSlider() {
   return (
-    <Container>
+    <div>
         ImgSlider
+    
       
-    </Container>
-  )
+    </div>
+  );
 }
 
 export default ImgSlider;
 
 
-
-const Container = styled.div`
-
-
-color : white;
-
-
-
-
-`
