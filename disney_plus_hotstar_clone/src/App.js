@@ -2,13 +2,30 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header.js'
 import Home from './components/Home.js'
+import React from 'react'
+import {BrowserRouter as Router , Route ,Routes,Link} from 'react-router-dom'
 
+import Detail from './components/Detail.js';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Home />
+
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/detail" element={<Detail />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+        
+
+            
+        
+
+      </Router>
+      
+      
+     
       
     </div>
   );
