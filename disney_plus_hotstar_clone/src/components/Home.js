@@ -6,8 +6,9 @@ import ImgSlider from './ImgSlider.js'
 function Home() {
   return (
     <Container>
-        <ImgSlider />
-        Home
+      <ImgSlider />
+      
+        
     </Container>
   );
 }
@@ -22,8 +23,8 @@ const Container = styled.main`
     color:white;
 
     &:before{
-        background: url("/images/home-background.png") center center / cover
-        no-repeat fixed;
+        background: url("/images/home-background.png") center center / cover no-repeat fixed;
+        background-size: cover;
         content:"";
         position:absolute;
         top:0;
@@ -32,12 +33,6 @@ const Container = styled.main`
         right:0;
         z-index:-1;
     }
-
-
-
-
-
-
 
 
 `
