@@ -3,10 +3,16 @@ import styled from 'styled-components'
 import ImgSlider from './ImgSlider.js'
 import Viewers from './Viewers.js'
 import Movies from './Movies.js'
-
+import { useEffect , useState } from 'react'
 
 
 function Home() {
+
+  useEffect(() => { 
+    console.log("hello")
+  } 
+  , []);
+
   return (
     <Container>
       <ImgSlider />
