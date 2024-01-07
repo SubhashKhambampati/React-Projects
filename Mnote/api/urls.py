@@ -4,5 +4,6 @@ from api import views
 
 urlpatterns = [
     
-    path('' , views.getRoutes , name='index'),
+    path('' , views.getRoutes , name='routes'),
+    path('note' , views.getNote , name='Note'),
 ]
